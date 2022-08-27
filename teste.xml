@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_171" class="java.beans.XMLDecoder">
+ <int>3</int>
+ <object class="com.mxgraph.model.mxCell" id="mxCell0">
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="height">
+     <double>30.0</double>
+    </void>
+    <void property="width">
+     <double>50.0</double>
+    </void>
+    <void property="x">
+     <double>146.0</double>
+    </void>
+    <void property="y">
+     <double>85.0</double>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>5</string>
+  </void>
+  <void property="parent">
+   <object class="com.mxgraph.model.mxCell" id="mxCell1">
+    <void property="id">
+     <string>1</string>
+    </void>
+    <void property="parent">
+     <object class="com.mxgraph.model.mxCell">
+      <void property="id">
+       <string>0</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="style">
+   <string>ROUNDED</string>
+  </void>
+  <void property="value">
+   <object class="view.Componente">
+    <void property="mttf">
+     <double>2.0</double>
+    </void>
+    <void property="mttr">
+     <double>2.0</double>
+    </void>
+    <void property="nomeComp">
+     <string>Quadro 1</string>
+    </void>
+   </object>
+  </void>
+  <void property="vertex">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell" id="mxCell2">
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="height">
+     <double>30.0</double>
+    </void>
+    <void property="width">
+     <double>50.0</double>
+    </void>
+    <void property="x">
+     <double>449.0</double>
+    </void>
+    <void property="y">
+     <double>138.0</double>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>6</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="style">
+   <string>ROUNDED</string>
+  </void>
+  <void property="value">
+   <object class="view.Componente">
+    <void property="mttf">
+     <double>2.0</double>
+    </void>
+    <void property="mttr">
+     <double>1.0</double>
+    </void>
+    <void property="nomeComp">
+     <string>Quadro 2</string>
+    </void>
+   </object>
+  </void>
+  <void property="vertex">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell">
+  <void property="edge">
+   <boolean>true</boolean>
+  </void>
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="relative">
+     <boolean>true</boolean>
+    </void>
+    <void property="sourcePoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>170.0</double>
+      </void>
+      <void property="y">
+       <double>100.0</double>
+      </void>
+     </object>
+    </void>
+    <void property="targetPoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>480.0</double>
+      </void>
+      <void property="y">
+       <double>160.0</double>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>7</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="source">
+   <object idref="mxCell0"/>
+  </void>
+  <void property="style">
+   <string></string>
+  </void>
+  <void property="target">
+   <object idref="mxCell2"/>
+  </void>
+  <void property="value">
+   <string></string>
+  </void>
+ </object>
+</java>

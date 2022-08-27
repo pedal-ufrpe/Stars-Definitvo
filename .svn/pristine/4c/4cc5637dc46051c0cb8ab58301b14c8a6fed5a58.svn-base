@@ -1,0 +1,40 @@
+SPN ModelSPN{
+
+	place P2on( tokens= 1 );
+	place P2off;
+	place P3on( tokens= 1 );
+	place P3off;
+
+	timedTransition failureP2(
+		inputs = [P2on],
+		outputs = [P2off],
+		delay = 100.0
+	);
+
+	timedTransition repairP2(
+		inputs = [P2off],
+		outputs = [P2on],
+		delay = 8.0
+	);
+
+	timedTransition failureP3(
+		inputs = [P3on],
+		outputs = [P3off],
+		delay = 100.0
+	);
+
+	timedTransition repairP3(
+		inputs = [P3off],
+		outputs = [P3on],
+		delay = 8.0
+	);
+
+
+	metric av = stationaryAnalysis( expression = "P{((#P2on=1))}");
+}
+
+main {
+	av = solve( ModelSPN,av );
+	println(av);
+
+}

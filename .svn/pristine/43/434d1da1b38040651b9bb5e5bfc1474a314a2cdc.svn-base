@@ -1,0 +1,106 @@
+package PSO;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import view.Componente;
+
+public class AlgPSO {
+    private int qtdIndividuo;
+    private int period;
+    private double ec;
+    private int de;
+    private ArrayList<Componente> comps_arq;
+    private String script = "Script.mry";
+    double pesoInercial = 0.9, c1 = 0.8, c2 = 1.2;
+    private Individuo[] populacao;
+    private double gBest;
+    private double pos_gBest;
+    
+    public AlgPSO(ArrayList<Componente> comps_arq,int qtdIndividuo, int period, double ec, int de, int geracoes, String script){
+        
+        //momento em que o algoritmo iniciou a execucao
+        Calendar data = Calendar.getInstance();
+        int hora = data.get(Calendar.HOUR_OF_DAY);
+        int min = data.get(Calendar.MINUTE);
+        int seg = data.get(Calendar.SECOND);
+        String inicio = "" + hora + " : " + min + " : " + seg;
+        System.out.println("tempo1 " + inicio);
+        
+        this.script = script;
+        
+        this.comps_arq = comps_arq;
+        this.qtdIndividuo = qtdIndividuo;
+        this.period = period;
+        this.ec = ec;
+        this.de = de;
+        
+        this.populacao = new Individuo[qtdIndividuo];
+        this.gBest = -11;
+        this.pos_gBest = 0;
+        this.gerarIniciais();
+        this.rodar();
+    }
+
+    public static void main(String[] args) {
+        AlgPSO pso = new AlgPSO(new ArrayList<Componente>(), 100, 0, 0, 0, 0, "script");
+        
+    }
+    public void gerarIniciais(){
+        for (int i = 0; i < this.qtdIndividuo; i++){
+            this.populacao[i] = new Individuo();
+            this.populacao[i].AtualizarFitness();
+        }
+    }
+    
+    public void rodar(){
+        for (int j = 0; j < this.qtdIndividuo; j++) {
+            System.out.println("Posição: " + this.populacao[j].getPosicao() + " Fitness: " + this.populacao[j].getFitness());
+        }
+        for (int i = 0; i < 100; i++) {
+            //System.out.println("População:" + i);
+            //Calcular fitness e Calcular Melhor posição
+            for (int j = 0; j < this.qtdIndividuo; j++) {
+                this.populacao[j].AtualizarFitness();
+                this.populacao[j].calcularMelhorPosicao();
+            }
+
+            //Calcular melhor aptidão
+            this.calcularGBest();
+
+            //System.out.println("melhor posicão global: "+algoritmo.p.gBest);
+            //Atualizar velocidade e atualizar posição
+            for (int j = 0; j < this.qtdIndividuo; j++) {
+                this.atualizarVelocidade(this.populacao[j]);
+                this.populacao[j].atualizarPosicao();
+            }
+
+            //System.out.println("");
+        }
+        System.out.println("gBest" + this.gBest + "pos gBest" + this.pos_gBest);
+        for (int j = 0; j < this.qtdIndividuo; j++) {
+            System.out.println("Posição: " + this.populacao[j].getPosicao() + " Fitness: " + this.populacao[j].getFitness() + " Melhor posição: " + this.populacao[j].getMelhorPosicao());
+        }
+    }
+    
+    public void calcularGBest(){
+        for (int i = 0; i < this.qtdIndividuo; i++){
+            if (this.populacao[i].getFitness() > this.gBest){
+                this.gBest = this.populacao[i].getFitness();
+                this.pos_gBest = this.populacao[i].getPosicao();
+            }
+        }
+    }
+    
+    public void atualizarVelocidade(Individuo i) {//pertence ao individuo
+        double novaVelocidade = pesoInercial * i.getVelocidade() + c1 * Math.random() * (i.getMelhorPosicao() - i.getPosicao()) + c2 * Math.random() * (this.pos_gBest - i.getPosicao());
+        if (novaVelocidade > 10) {
+            i.setVelocidade(10);
+        } else if (novaVelocidade < -10) {
+            i.setVelocidade(-10);
+        } else {
+            i.setVelocidade(novaVelocidade);
+        }
+
+    }
+    
+}

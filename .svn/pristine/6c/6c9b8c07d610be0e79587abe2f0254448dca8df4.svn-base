@@ -1,0 +1,32 @@
+t = 100;
+
+
+RBD ModelRBD{
+
+   block b2( MTTF = 100.0, MTTR = 8.0);
+   block b3( MTTF = 100.0, MTTR = 8.0);
+
+   series s1(b2, b3);
+
+   parallel p0(s1);
+
+   top p0;
+
+   metric av = availability;
+   metric rel = reliability( time = t );
+   metric mttf = mttf;
+   metric mttr = mttr;
+}
+
+main{
+
+	av = solve(ModelRBD, av);
+	rel = solve(ModelRBD, rel);
+	mttf = solve(ModelRBD, mttf);
+	mttr = solve(ModelRBD, mttr);
+
+	println("Availability: " .. av );
+	println("Reliability: " .. rel );
+	println("Mean time to failure: " .. mttf );
+	println("Mean time to repair: " .. mttr );
+}

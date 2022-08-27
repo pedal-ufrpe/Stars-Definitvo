@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_171" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>PowerStrip</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.34079987022504304</double>
+      </void>
+      <void property="id">
+       <int>1</int>
+      </void>
+      <void property="mttf">
+       <double>133.17271492717356</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 26</string>
+      </void>
+      <void property="poderMax">
+       <double>6.148375773258736</double>
+      </void>
+      <void property="preco">
+       <double>191.32085188865847</double>
+      </void>
+      <void property="tipoComp">
+       <string>PowerStrip</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.45375234345077303</double>
+      </void>
+      <void property="id">
+       <int>2</int>
+      </void>
+      <void property="mttf">
+       <double>134.4349468391581</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 27</string>
+      </void>
+      <void property="poderMax">
+       <double>5.759871436256352</double>
+      </void>
+      <void property="preco">
+       <double>184.58881232686738</double>
+      </void>
+      <void property="tipoComp">
+       <string>PowerStrip</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.291754129804477</double>
+      </void>
+      <void property="id">
+       <int>3</int>
+      </void>
+      <void property="mttf">
+       <double>78.80790990221657</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 28</string>
+      </void>
+      <void property="poderMax">
+       <double>4.858178440840932</double>
+      </void>
+      <void property="preco">
+       <double>191.38253361825605</double>
+      </void>
+      <void property="tipoComp">
+       <string>PowerStrip</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.29348507897464476</double>
+      </void>
+      <void property="id">
+       <int>4</int>
+      </void>
+      <void property="mttf">
+       <double>103.43934490236566</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 29</string>
+      </void>
+      <void property="poderMax">
+       <double>6.238644744665861</double>
+      </void>
+      <void property="preco">
+       <double>157.6761644416243</double>
+      </void>
+      <void property="tipoComp">
+       <string>PowerStrip</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.39099403594127935</double>
+      </void>
+      <void property="id">
+       <int>5</int>
+      </void>
+      <void property="mttf">
+       <double>81.1044180183047</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 30</string>
+      </void>
+      <void property="poderMax">
+       <double>5.269043640459016</double>
+      </void>
+      <void property="preco">
+       <double>242.4339910953166</double>
+      </void>
+      <void property="tipoComp">
+       <string>PowerStrip</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>UPS_5kVA</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>3.5265642281221377</double>
+      </void>
+      <void property="id">
+       <int>1</int>
+      </void>
+      <void property="mttf">
+       <double>52.781367514193036</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 6</string>
+      </void>
+      <void property="poderMax">
+       <double>5.0970806723112805</double>
+      </void>
+      <void property="preco">
+       <double>3046.0958845775526</double>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>2.9079198621826987</double>
+      </void>
+      <void property="id">
+       <int>2</int>
+      </void>
+      <void property="mttf">
+       <double>104.41525638990441</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 7</string>
+      </void>
+      <void property="poderMax">
+       <double>4.387823429913291</double>
+      </void>
+      <void property="preco">
+       <double>3752.5964591685192</double>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>3.7369718338755735</double>
+      </void>
+      <void property="id">
+       <int>3</int>
+      </void>
+      <void property="mttf">
+       <double>84.92575225361145</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 8</string>
+      </void>
+      <void property="poderMax">
+       <double>4.287619928422764</double>
+      </void>
+      <void property="preco">
+       <double>4450.844306828279</double>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>2.309025056279045</double>
+      </void>
+      <void property="id">
+       <int>4</int>
+      </void>
+      <void property="mttf">
+       <double>116.21879688433204</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 9</string>
+      </void>
+      <void property="poderMax">
+       <double>4.878692503301805</double>
+      </void>
+      <void property="preco">
+       <double>3870.07877438827</double>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>3.338303953119603</double>
+      </void>
+      <void property="id">
+       <int>5</int>
+      </void>
+      <void property="mttf">
+       <double>54.75649727307666</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 10</string>
+      </void>
+      <void property="poderMax">
+       <double>4.553910102964947</double>
+      </void>
+      <void property="preco">
+       <double>3487.7893577588884</double>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>Subpanel</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.45581231511872194</double>
+      </void>
+      <void property="id">
+       <int>1</int>
+      </void>
+      <void property="mttf">
+       <double>83.17231917998271</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 21</string>
+      </void>
+      <void property="poderMax">
+       <double>5.977273361923736</double>
+      </void>
+      <void property="preco">
+       <double>205.73339484626746</double>
+      </void>
+      <void property="tipoComp">
+       <string>Subpanel</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.40756307656282664</double>
+      </void>
+      <void property="id">
+       <int>2</int>
+      </void>
+      <void property="mttf">
+       <double>114.4273532778504</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 22</string>
+      </void>
+      <void property="poderMax">
+       <double>6.38925068396104</double>
+      </void>
+      <void property="preco">
+       <double>236.3520150388934</double>
+      </void>
+      <void property="tipoComp">
+       <string>Subpanel</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.3675115574535788</double>
+      </void>
+      <void property="id">
+       <int>3</int>
+      </void>
+      <void property="mttf">
+       <double>86.92209968173131</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 23</string>
+      </void>
+      <void property="poderMax">
+       <double>6.354875893872306</double>
+      </void>
+      <void property="preco">
+       <double>181.21001908664402</double>
+      </void>
+      <void property="tipoComp">
+       <string>Subpanel</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.49319868238900344</double>
+      </void>
+      <void property="id">
+       <int>4</int>
+      </void>
+      <void property="mttf">
+       <double>72.54935249984082</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 24</string>
+      </void>
+      <void property="poderMax">
+       <double>5.9524382576384065</double>
+      </void>
+      <void property="preco">
+       <double>191.14392564218403</double>
+      </void>
+      <void property="tipoComp">
+       <string>Subpanel</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.3007625832149417</double>
+      </void>
+      <void property="id">
+       <int>5</int>
+      </void>
+      <void property="mttf">
+       <double>145.46094703205154</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 25</string>
+      </void>
+      <void property="poderMax">
+       <double>4.84827759132019</double>
+      </void>
+      <void property="preco">
+       <double>228.20444752358952</double>
+      </void>
+      <void property="tipoComp">
+       <string>Subpanel</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>UPS_250kVA</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>73.79897304695444</double>
+      </void>
+      <void property="id">
+       <int>1</int>
+      </void>
+      <void property="mttf">
+       <double>121.78703572537744</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 11</string>
+      </void>
+      <void property="poderMax">
+       <double>287.23806951486125</double>
+      </void>
+      <void property="preco">
+       <double>56319.225125130324</double>
+      </void>
+      <void property="tipoComp">
+       <string>UPS_250kVA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>67.15855692897992</double>
+      </void>
+      <void property="id">
+       <int>2</int>
+      </void>
+      <void property="mttf">
+       <double>71.77212657612753</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 12</string>
+      </void>
+      <void property="poderMax">
+       <double>214.60990714014633</double>
+      </void>
+      <void property="preco">
+       <double>74672.7210144282</double>
+      </void>
+      <void property="tipoComp">
+       <string>UPS_250kVA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>44.037453130024254</double>
+      </void>
+      <void property="id">
+       <int>3</int>
+      </void>
+      <void property="mttf">
+       <double>101.67002869201694</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 13</string>
+      </void>
+      <void property="poderMax">
+       <double>291.25030143257123</double>
+      </void>
+      <void property="preco">
+       <double>46379.216711240944</double>
+      </void>
+      <void property="tipoComp">
+       <string>UPS_250kVA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>79.26320908762989</double>
+      </void>
+      <void property="id">
+       <int>4</int>
+      </void>
+      <void property="mttf">
+       <double>64.85977386342586</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 14</string>
+      </void>
+      <void property="poderMax">
+       <double>187.56730045257206</double>
+      </void>
+      <void property="preco">
+       <double>46340.19218445758</double>
+      </void>
+      <void property="tipoComp">
+       <string>UPS_250kVA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>48.57823025188044</double>
+      </void>
+      <void property="id">
+       <int>5</int>
+      </void>
+      <void property="mttf">
+       <double>120.13519095379466</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 15</string>
+      </void>
+      <void property="poderMax">
+       <double>321.8190078072204</double>
+      </void>
+      <void property="preco">
+       <double>58561.23136698064</double>
+      </void>
+      <void property="tipoComp">
+       <string>UPS_250kVA</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>SDTransformer</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.31417242021478153</double>
+      </void>
+      <void property="id">
+       <int>1</int>
+      </void>
+      <void property="mttf">
+       <double>114.57303188689207</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 16</string>
+      </void>
+      <void property="poderMax">
+       <double>4.362145988245359</double>
+      </void>
+      <void property="preco">
+       <double>484.8833245587229</double>
+      </void>
+      <void property="tipoComp">
+       <string>SDTransformer</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.4551014074502555</double>
+      </void>
+      <void property="id">
+       <int>2</int>
+      </void>
+      <void property="mttf">
+       <double>78.6629445089721</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 17</string>
+      </void>
+      <void property="poderMax">
+       <double>5.6236163449743195</double>
+      </void>
+      <void property="preco">
+       <double>641.8315921216124</double>
+      </void>
+      <void property="tipoComp">
+       <string>SDTransformer</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.4006529678010491</double>
+      </void>
+      <void property="id">
+       <int>3</int>
+      </void>
+      <void property="mttf">
+       <double>118.87872702866986</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 18</string>
+      </void>
+      <void property="poderMax">
+       <double>3.766018282112407</double>
+      </void>
+      <void property="preco">
+       <double>413.703308391623</double>
+      </void>
+      <void property="tipoComp">
+       <string>SDTransformer</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.2972686876197096</double>
+      </void>
+      <void property="id">
+       <int>4</int>
+      </void>
+      <void property="mttf">
+       <double>98.96285777826486</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 19</string>
+      </void>
+      <void property="poderMax">
+       <double>5.860126042123319</double>
+      </void>
+      <void property="preco">
+       <double>587.3559491256459</double>
+      </void>
+      <void property="tipoComp">
+       <string>SDTransformer</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="view.Componente">
+      <void property="eficiencia">
+       <double>0.99999</double>
+      </void>
+      <void property="energia">
+       <double>0.3278038650647199</double>
+      </void>
+      <void property="id">
+       <int>5</int>
+      </void>
+      <void property="mttf">
+       <double>72.28019524003336</double>
+      </void>
+      <void property="nomeComp">
+       <string>Quadro 20</string>
+      </void>
+      <void property="poderMax">
+       <double>5.8769242400222605</double>
+      </void>
+      <void property="preco">
+       <double>682.7791642633978</double>
+      </void>
+      <void property="tipoComp">
+       <string>SDTransformer</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

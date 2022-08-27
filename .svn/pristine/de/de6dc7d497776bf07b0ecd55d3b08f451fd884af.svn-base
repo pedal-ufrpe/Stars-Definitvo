@@ -1,0 +1,82 @@
+package PSO;
+
+import java.util.Random;
+
+public class Individuo {
+
+    private double velocidade;
+    private double posicao;
+    private double melhorPosicao;
+    private double fitness;
+    private Random gerador = new Random();
+
+    public Individuo() {
+        this.velocidade = Math.random();
+        this.posicao = gerador.nextInt(20) - 10;
+        this.melhorPosicao = posicao;
+    }
+
+    public void AtualizarFitness() {
+        setFitness((-1 * Math.pow(this.getPosicao(), 2)) - (8 * this.getPosicao()));
+        
+    }
+    
+    private double calcularFitness(double posicao) {
+        double fitness = (-1 * Math.pow(this.getPosicao(), 2)) - (8 * this.getPosicao());
+        return fitness;
+    }
+
+    public void calcularMelhorPosicao() {
+        if (calcularFitness(getMelhorPosicao()) < calcularFitness(getPosicao())) {
+            setMelhorPosicao(getPosicao());
+        }
+    }
+    
+    public void atualizarPosicao() {//pertence ao individuo
+        double nova_posicao = this.getPosicao() + this.getVelocidade();
+        if (nova_posicao > 10) {
+            this.setPosicao(10);
+        } else if (this.getPosicao() < -10) {
+            this.setPosicao(-10);
+        }else{
+            this.setPosicao(nova_posicao);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Individuo [velocidade=" + getVelocidade() + ", posicao=" + getPosicao() + ", melhorPosicao=" + getMelhorPosicao()
+                + ", fitness=" + getFitness() + "]";
+    }
+    public double getVelocidade() {
+        return velocidade;
+    }
+
+    public void setVelocidade(double velocidade) {
+        this.velocidade = velocidade;
+    }
+
+    public double getPosicao() {
+        return posicao;
+    }
+
+    public void setPosicao(double posicao) {
+        this.posicao = posicao;
+    }
+
+    public double getMelhorPosicao() {
+        return melhorPosicao;
+    }
+
+    public void setMelhorPosicao(double melhorPosicao) {
+        this.melhorPosicao = melhorPosicao;
+    }
+
+    public double getFitness() {
+        return fitness;
+    }
+
+    public void setFitness(double fitness) {
+        this.fitness = fitness;
+    }
+}

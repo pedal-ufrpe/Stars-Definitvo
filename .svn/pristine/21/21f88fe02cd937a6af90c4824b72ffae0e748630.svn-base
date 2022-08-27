@@ -1,0 +1,40 @@
+
+UPS_5kVA5 - SDTransformer2 - Subpanel5 - PowerStrip2 - UPS_5kVA2 - STS1 - SDTransformer4 - Subpanel5 - PowerStrip4 - 1.7976931348623157E308
+UPS_5kVA2 - SDTransformer4 - Subpanel2 - PowerStrip3 - UPS_5kVA5 - STS1 - SDTransformer2 - Subpanel4 - PowerStrip4 - 1.7976931348623157E308
+UPS_5kVA5 - SDTransformer5 - Subpanel5 - PowerStrip3 - UPS_5kVA2 - STS1 - SDTransformer4 - Subpanel5 - PowerStrip4 - 1.7976931348623157E308
+UPS_5kVA3 - SDTransformer2 - Subpanel1 - PowerStrip5 - UPS_5kVA2 - STS3 - SDTransformer4 - Subpanel1 - PowerStrip4 - 1.7976931348623157E308
+UPS_5kVA3 - SDTransformer4 - Subpanel2 - PowerStrip3 - UPS_5kVA5 - STS1 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.48536304642282035
+UPS_5kVA2 - SDTransformer2 - Subpanel1 - PowerStrip3 - UPS_5kVA1 - STS5 - SDTransformer4 - Subpanel4 - PowerStrip4 - 0.4684981755363807
+UPS_5kVA5 - SDTransformer4 - Subpanel5 - PowerStrip3 - UPS_5kVA2 - STS1 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.41429144834787957
+UPS_5kVA4 - SDTransformer1 - Subpanel2 - PowerStrip3 - UPS_5kVA5 - STS1 - SDTransformer2 - Subpanel4 - PowerStrip4 - 0.4075912064366134
+UPS_5kVA4 - SDTransformer2 - Subpanel5 - PowerStrip2 - UPS_5kVA4 - STS1 - SDTransformer5 - Subpanel4 - PowerStrip2 - 0.3474617959197319
+UPS_5kVA5 - SDTransformer4 - Subpanel2 - PowerStrip3 - UPS_5kVA2 - STS4 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.3016577663321049
+UPS_5kVA2 - SDTransformer5 - Subpanel2 - PowerStrip3 - UPS_5kVA2 - STS4 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.2197336211492959
+UPS_5kVA3 - SDTransformer4 - Subpanel1 - PowerStrip3 - UPS_5kVA2 - STS4 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.20268606244116041
+UPS_5kVA4 - SDTransformer4 - Subpanel2 - PowerStrip3 - UPS_5kVA1 - STS4 - SDTransformer2 - Subpanel1 - PowerStrip4 - 0.1974547072538121
+UPS_5kVA4 - SDTransformer5 - Subpanel2 - PowerStrip3 - UPS_5kVA5 - STS5 - SDTransformer4 - Subpanel1 - PowerStrip4 - 0.1548781653558295
+UPS_5kVA5 - SDTransformer2 - Subpanel5 - PowerStrip3 - UPS_5kVA5 - STS1 - SDTransformer2 - Subpanel1 - PowerStrip4 - 0.13383080721434534
+UPS_5kVA4 - SDTransformer5 - Subpanel1 - PowerStrip3 - UPS_5kVA4 - STS4 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.13169901048901853
+UPS_5kVA3 - SDTransformer2 - Subpanel5 - PowerStrip2 - UPS_5kVA2 - STS4 - SDTransformer2 - Subpanel5 - PowerStrip4 - 0.1288690253107708
+UPS_5kVA5 - SDTransformer2 - Subpanel1 - PowerStrip5 - UPS_5kVA2 - STS3 - SDTransformer4 - Subpanel1 - PowerStrip4 - 0.11939404751390198
+UPS_5kVA3 - SDTransformer2 - Subpanel2 - PowerStrip3 - UPS_5kVA2 - STS4 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.10917501623068299
+UPS_5kVA4 - SDTransformer2 - Subpanel2 - PowerStrip3 - UPS_5kVA5 - STS1 - SDTransformer2 - Subpanel4 - PowerStrip4 - 0.10672507585868317
+UPS_5kVA2 - SDTransformer4 - Subpanel1 - PowerStrip3 - UPS_5kVA5 - STS3 - SDTransformer1 - Subpanel4 - PowerStrip4 - 0.10325148952216723
+UPS_5kVA2 - SDTransformer2 - Subpanel2 - PowerStrip3 - UPS_5kVA4 - STS1 - SDTransformer4 - Subpanel5 - PowerStrip3 - 0.10271104354699898
+UPS_5kVA5 - SDTransformer1 - Subpanel1 - PowerStrip3 - UPS_5kVA2 - STS4 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.10127131794857194
+UPS_5kVA5 - SDTransformer4 - Subpanel2 - PowerStrip5 - UPS_5kVA2 - STS4 - SDTransformer3 - Subpanel4 - PowerStrip2 - 0.09889245322608277
+UPS_5kVA5 - SDTransformer4 - Subpanel1 - PowerStrip3 - UPS_5kVA2 - STS4 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.09792187248967299
+UPS_5kVA5 - SDTransformer4 - Subpanel1 - PowerStrip5 - UPS_5kVA2 - STS3 - SDTransformer4 - Subpanel1 - PowerStrip4 - 0.09230818996148588
+UPS_5kVA5 - SDTransformer3 - Subpanel1 - PowerStrip3 - UPS_5kVA2 - STS4 - SDTransformer4 - Subpanel5 - PowerStrip4 - 0.09038921745336086
+UPS_5kVA2 - SDTransformer4 - Subpanel1 - PowerStrip3 - UPS_5kVA5 - STS3 - SDTransformer1 - Subpanel4 - PowerStrip4 - 0.08040465731676771
+UPS_5kVA4 - SDTransformer2 - Subpanel1 - PowerStrip5 - UPS_5kVA2 - STS3 - SDTransformer4 - Subpanel1 - PowerStrip4 - 0.08029841812731521
+UPS_5kVA2 - SDTransformer4 - Subpanel2 - PowerStrip3 - UPS_5kVA5 - STS1 - SDTransformer2 - Subpanel4 - PowerStrip4 - 0.07801203289037278
+
+
+maior   UPS_5kVA5 - SDTransformer2 - Subpanel5 - PowerStrip2 - UPS_5kVA2 - STS1 - SDTransformer4 - Subpanel5 - PowerStrip4 - 1.7976931348623157E308
+disp	0.9994021978452042	custo: 15169.52224534031	exer: 2.0400358299453334	Disp em num9s   3.223442523866452
+
+
+comecou em: 16 : 44 : 36
+finalizou em: 16 : 44 : 43
+demorou:a

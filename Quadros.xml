@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_171" class="java.beans.XMLDecoder">
+ <int>8</int>
+ <object class="com.mxgraph.model.mxCell" id="mxCell0">
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="height">
+     <double>30.0</double>
+    </void>
+    <void property="width">
+     <double>50.0</double>
+    </void>
+    <void property="x">
+     <double>330.0</double>
+    </void>
+    <void property="y">
+     <double>80.0</double>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>2</string>
+  </void>
+  <void property="parent">
+   <object class="com.mxgraph.model.mxCell" id="mxCell1">
+    <void property="id">
+     <string>1</string>
+    </void>
+    <void property="parent">
+     <object class="com.mxgraph.model.mxCell">
+      <void property="id">
+       <string>0</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="style">
+   <string>ROUNDED</string>
+  </void>
+  <void property="value">
+   <object class="view.Componente">
+    <void property="nomeComp">
+     <string>Quadro 1</string>
+    </void>
+   </object>
+  </void>
+  <void property="vertex">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell" id="mxCell2">
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="height">
+     <double>30.0</double>
+    </void>
+    <void property="width">
+     <double>50.0</double>
+    </void>
+    <void property="x">
+     <double>400.0</double>
+    </void>
+    <void property="y">
+     <double>220.0</double>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>3</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="style">
+   <string>ROUNDED</string>
+  </void>
+  <void property="value">
+   <object class="view.Componente">
+    <void property="nomeComp">
+     <string>Quadro 2</string>
+    </void>
+   </object>
+  </void>
+  <void property="vertex">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell" id="mxCell3">
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="height">
+     <double>30.0</double>
+    </void>
+    <void property="width">
+     <double>50.0</double>
+    </void>
+    <void property="x">
+     <double>260.0</double>
+    </void>
+    <void property="y">
+     <double>220.0</double>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>4</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="style">
+   <string>ROUNDED</string>
+  </void>
+  <void property="value">
+   <object class="view.Componente">
+    <void property="nomeComp">
+     <string>Quadro 3</string>
+    </void>
+   </object>
+  </void>
+  <void property="vertex">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell" id="mxCell4">
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="height">
+     <double>30.0</double>
+    </void>
+    <void property="width">
+     <double>50.0</double>
+    </void>
+    <void property="x">
+     <double>330.0</double>
+    </void>
+    <void property="y">
+     <double>370.0</double>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>7</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="style">
+   <string>ROUNDED</string>
+  </void>
+  <void property="value">
+   <object class="view.Componente">
+    <void property="nomeComp">
+     <string>Quadro 4</string>
+    </void>
+   </object>
+  </void>
+  <void property="vertex">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell">
+  <void property="edge">
+   <boolean>true</boolean>
+  </void>
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="relative">
+     <boolean>true</boolean>
+    </void>
+    <void property="sourcePoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>350.0</double>
+      </void>
+      <void property="y">
+       <double>100.0</double>
+      </void>
+     </object>
+    </void>
+    <void property="targetPoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>300.0</double>
+      </void>
+      <void property="y">
+       <double>330.0</double>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>5</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="source">
+   <object idref="mxCell0"/>
+  </void>
+  <void property="style">
+   <string></string>
+  </void>
+  <void property="target">
+   <object idref="mxCell3"/>
+  </void>
+  <void property="value">
+   <string></string>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell">
+  <void property="edge">
+   <boolean>true</boolean>
+  </void>
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="relative">
+     <boolean>true</boolean>
+    </void>
+    <void property="sourcePoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>350.0</double>
+      </void>
+      <void property="y">
+       <double>100.0</double>
+      </void>
+     </object>
+    </void>
+    <void property="targetPoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>460.0</double>
+      </void>
+      <void property="y">
+       <double>200.0</double>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>6</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="source">
+   <object idref="mxCell0"/>
+  </void>
+  <void property="style">
+   <string></string>
+  </void>
+  <void property="target">
+   <object idref="mxCell2"/>
+  </void>
+  <void property="value">
+   <string></string>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell">
+  <void property="edge">
+   <boolean>true</boolean>
+  </void>
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="relative">
+     <boolean>true</boolean>
+    </void>
+    <void property="sourcePoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>290.0</double>
+      </void>
+      <void property="y">
+       <double>240.0</double>
+      </void>
+     </object>
+    </void>
+    <void property="targetPoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>360.0</double>
+      </void>
+      <void property="y">
+       <double>390.0</double>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>8</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="source">
+   <object idref="mxCell3"/>
+  </void>
+  <void property="style">
+   <string></string>
+  </void>
+  <void property="target">
+   <object idref="mxCell4"/>
+  </void>
+  <void property="value">
+   <string></string>
+  </void>
+ </object>
+ <object class="com.mxgraph.model.mxCell">
+  <void property="edge">
+   <boolean>true</boolean>
+  </void>
+  <void property="geometry">
+   <object class="com.mxgraph.model.mxGeometry">
+    <void property="relative">
+     <boolean>true</boolean>
+    </void>
+    <void property="sourcePoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>430.0</double>
+      </void>
+      <void property="y">
+       <double>240.0</double>
+      </void>
+     </object>
+    </void>
+    <void property="targetPoint">
+     <object class="com.mxgraph.util.mxPoint">
+      <void property="x">
+       <double>380.0</double>
+      </void>
+      <void property="y">
+       <double>380.0</double>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="id">
+   <string>9</string>
+  </void>
+  <void property="parent">
+   <object idref="mxCell1"/>
+  </void>
+  <void property="source">
+   <object idref="mxCell2"/>
+  </void>
+  <void property="style">
+   <string></string>
+  </void>
+  <void property="target">
+   <object idref="mxCell4"/>
+  </void>
+  <void property="value">
+   <string></string>
+  </void>
+ </object>
+</java>

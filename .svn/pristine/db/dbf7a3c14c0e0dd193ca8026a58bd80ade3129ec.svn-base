@@ -1,0 +1,236 @@
+package PSO;
+
+import AlgDiferencial.AlgDiferencial;
+import Genes.Cromossomo;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import view.Componente;
+
+public class Algoritmo {
+    private int qtdIndividuo;
+    private int period;
+    private double ec;
+    private int de;
+    private ArrayList<Componente> comps_arq;
+    private String script = "Script.mry";
+    private Map<String, ArrayList<Componente>> dicComp = new HashMap<>();
+    private ArrayList<Cromossomo> populacao;
+    private Random rand = new Random();
+	double pesoInercial = 0.9, c1 = 0.8, c2 = 1.2;
+	Populacao p = new Populacao();
+        private double gBest;
+        private double pos_gBest;
+	
+        
+    public Algoritmo(ArrayList<Componente> comps_arq, int qtdIndividuo, int period, double ec, int de, int geracoes, String script) {
+
+        //momento em que o algoritmo iniciou a execucao
+        Calendar data = Calendar.getInstance();
+        int hora = data.get(Calendar.HOUR_OF_DAY);
+        int min = data.get(Calendar.MINUTE);
+        int seg = data.get(Calendar.SECOND);
+        String inicio = "" + hora + " : " + min + " : " + seg;
+        System.out.println("tempo1 " + inicio);
+
+        this.script = script;
+
+        this.comps_arq = comps_arq;
+        this.qtdIndividuo = qtdIndividuo;
+        this.period = period;
+        this.ec = ec;
+        this.de = de;
+
+        this.populacao = new ArrayList<Cromossomo>();
+        this.gBest = -11;
+        this.pos_gBest = 0;
+        this.lerComponentes();
+        this.gerarIniciais();
+        this.rodar(geracoes);
+    }
+    
+    private void lerComponentes() {//le de um arquivo com varios componentes de todos os tipos e salva num dicionario (dicComp)
+        try {
+            //le o arquivo
+            File arquivo = new File("componentesPadrao.txt");
+            FileReader fr = new FileReader(arquivo);
+            BufferedReader br = new BufferedReader(fr);
+            br.readLine();
+
+            //insere as chaves do dicionario (tipo do componente)
+            this.dicComp.put("UPS_5kVA", new ArrayList<Componente>());
+            this.dicComp.put("STS", new ArrayList<Componente>());
+            this.dicComp.put("SDTransformer", new ArrayList<Componente>());
+            this.dicComp.put("Subpanel", new ArrayList<Componente>());
+            this.dicComp.put("PowerStrip", new ArrayList<Componente>());
+
+            //preenche o dicionario com os componentes do arquivo, separando-os por chave
+            Componente comp;
+            while (br.ready()) {
+                String lincomp = br.readLine();
+                String atb[] = new String[5];
+                atb = lincomp.split(";");
+                comp = new Componente();
+                comp.setId(Integer.parseInt(atb[0]));
+                comp.setTipoComp(atb[2]);
+                comp.setMttf(Double.parseDouble(atb[3]));
+                comp.setEficiencia(Double.parseDouble(atb[4]));
+                comp.setPreco(Double.parseDouble(atb[5]));
+
+                dicComp.get(atb[2]).add(comp);
+            }
+            /*for (String chave : dicComp.keySet()) {
+                this.getExtremos(dicComp.get(chave));
+            }*/
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+        
+	public void atualizarVelocidade(IndividuoOriginal i) {
+		double novaVelocidade = pesoInercial * i.velocidade + c1*Math.random()*(i.melhorPosicao - i.posicao) + c2 * Math.random()*(p.gBest - i.posicao);		
+		if(novaVelocidade > 10) {i.velocidade = 10;}
+		else if(novaVelocidade < -10) {i.velocidade = -10;}
+		else {i.velocidade = novaVelocidade;}
+		
+	}
+	
+	public void AtualizarPosicao(IndividuoOriginal i) {
+		i.posicao = i.posicao + i.velocidade;
+		if(i.posicao > 10) {i.posicao = 10;}
+		else if(i.posicao < -10) {i.posicao = -10;}
+	}
+	
+
+	public static void main(String[] args) {
+		Algoritmo algoritmo = new Algoritmo();
+		int rodar = 1;
+		while(rodar == 1) {
+			for(int j = 0; j < algoritmo.p.individuos.size(); j++) {
+				System.out.println("Posicao: " + algoritmo.p.individuos.get(j).posicao + " Fitness: " + algoritmo.p.individuos.get(j).calcularFitness(algoritmo.p.individuos.get(j).posicao));
+				}
+			for(int i =0 ;i < 30; i++) {
+				//System.out.println("Popula��o:" + i);
+				//Calcular fitness e Calcular Melhor posi��o
+				for(int j = 0; j < algoritmo.p.individuos.size(); j++) {
+					algoritmo.p.individuos.get(j).calcularFitness(algoritmo.p.individuos.get(j).posicao);
+					algoritmo.p.individuos.get(j).calcularMelhorPosicao();
+				}
+				
+				//Calcular melhor aptidao
+				algoritmo.p.calcularGbest();
+								
+				//System.out.println("melhor posic�o global: "+algoritmo.p.gBest);
+				//Atualizar velocidade e atualizar posi��o
+				for(Cromossomo i: populacao) {
+                                    for (Componente c:i.genes){
+                                        c.atualizarVelocidade(algoritmo.p.individuos.get(j));
+                                        i.AtualizarPosicao(c);
+                                        c.valor+vel == c_nv;
+                                        c_nv = dist(c_cn)
+                                    }
+                                    dist(c){
+                                        lista;
+                                        for (i:lista);
+                                            dist_euc = euclid(i, c);
+                                            if dist_euc < dist_p;
+                                                dist_p = dist_euc;
+                                                i_p = i;
+                                        
+                                        return i_p;
+                                    }
+					[2,3,5,3] + 0.7; -->> [2.7,3,4.3,3.7] -->> [3.2,3,4,3.8];
+                                        [4,3,2,5];
+				}
+				
+
+				//System.out.println("");
+			}
+			for(int j = 0; j < algoritmo.p.individuos.size(); j++) {
+				System.out.println("Posi��o: " + algoritmo.p.individuos.get(j).posicao + " Fitness: " + algoritmo.p.individuos.get(j).calcularFitness(algoritmo.p.individuos.get(j).posicao) + " Melhor posi��o: " + algoritmo.p.individuos.get(j).melhorPosicao);
+				}
+			Scanner entrada = new Scanner(System.in);
+			System.out.println("Rodar mais 100?");
+			rodar =  + entrada.nextInt();
+		}
+
+    private void gerarIniciais() {
+        ArrayList<Componente> genes;
+
+        Cromossomo cromo;
+        try {
+
+            int cont = 0;
+            String tipo;
+            String idVert;
+            while (cont < qtdIndividuo) {
+                genes = new ArrayList<>();
+                for (Componente comp : comps_arq) {
+                    tipo = comp.getTipoComp();
+                    idVert = comp.getIdVert();
+                    int var = this.rand.nextInt(dicComp.get(tipo).size());
+                    comp = dicComp.get(tipo).get(var).clone();
+                    comp.setIdVert(idVert);
+                    genes.add(comp);
+                }
+                cromo = new Cromossomo(genes, period, ec, de);
+                populacao.add(cromo);
+                cromo.setScore("Script_1.mry");
+                cont++;
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    private void rodar(int geracoes) {
+        int posi_arq;
+        Componente comp;
+        for (int i = 0; i < geracoes; i++){
+            for (Cromossomo c: populacao){
+                c.setScore(script);//atualizacao do fitness
+                
+            }
+            for (Cromossomo c: populacao){
+                
+                for (Componente eqp: c.getGenes()){//atualizacao da posicao de cada componente
+                    posi_arq = c.getGenes().indexOf(eqp);
+                    comp = this.difVetorial(eqp.getMttf(), eqp.getTipoComp());
+                    c.atualizaPosicao(posi_arq, comp);
+                }
+            }
+        }
+    }
+    
+    private Componente difVetorial(double mttf, String tipo) {//traz um componente da base mais parecido ao Vdonor
+        double mttf_atual, dist_atual, dist_menor;
+        dist_menor = 999999999;
+        Componente menor = new Componente();
+
+        for (Componente comp : dicComp.get(tipo)) {
+            
+            mttf_atual = comp.getMttf() - mttf;
+            dist_atual = Math.pow(mttf, 2);
+            if (dist_atual < dist_menor) {
+                dist_menor = dist_atual;
+                try {
+                    menor = comp.clone();
+                } catch (CloneNotSupportedException ex) {
+                    Logger.getLogger(AlgDiferencial.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+        //System.out.println("vdonor [" + Vdonor[0] + ", " + Vdonor[1] + ", " + Vdonor[2] +  "]  \ncomp_donor [   " + menor.getVetor()[0] + ", " + menor.getVetor()[1] + ", " + menor.getVetor()[2]);
+        return menor;
+    }
+	
+
+}

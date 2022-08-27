@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_171" class="java.beans.XMLDecoder">
+ <int>5</int>
+ <object class="view.Componente">
+  <void property="idVert">
+   <string>2</string>
+  </void>
+  <void property="nomeComp">
+   <string>Quadro 1</string>
+  </void>
+ </object>
+ <object class="view.Componente">
+  <void property="energia">
+   <double>61.03986048</double>
+  </void>
+  <void property="idVert">
+   <string>3</string>
+  </void>
+  <void property="nomeComp">
+   <string>UPS_250kVA</string>
+  </void>
+  <void property="poderMax">
+   <double>250.0</double>
+  </void>
+  <void property="preco">
+   <double>60000.0</double>
+  </void>
+  <void property="tipoComp">
+   <string>UPS_250kVA</string>
+  </void>
+ </object>
+ <object class="view.Componente">
+  <void property="eficiencia">
+   <double>98.5</double>
+  </void>
+  <void property="energia">
+   <double>0.35928</double>
+  </void>
+  <void property="idVert">
+   <string>4</string>
+  </void>
+  <void property="nomeComp">
+   <string>SDTransformer</string>
+  </void>
+  <void property="preco">
+   <double>550.0</double>
+  </void>
+  <void property="tipoComp">
+   <string>SDTransformer</string>
+  </void>
+ </object>
+ <object class="view.Componente">
+  <void property="eficiencia">
+   <double>99.9</double>
+  </void>
+  <void property="energia">
+   <double>0.4284</double>
+  </void>
+  <void property="idVert">
+   <string>5</string>
+  </void>
+  <void property="nomeComp">
+   <string>SubPanel</string>
+  </void>
+  <void property="preco">
+   <double>200.0</double>
+  </void>
+  <void property="tipoComp">
+   <string>Subpanel</string>
+  </void>
+ </object>
+ <object class="view.Componente">
+  <void property="eficiencia">
+   <double>99.5</double>
+  </void>
+  <void property="energia">
+   <double>0.35568</double>
+  </void>
+  <void property="idVert">
+   <string>6</string>
+  </void>
+  <void property="nomeComp">
+   <string>PowerStrip</string>
+  </void>
+  <void property="preco">
+   <double>200.0</double>
+  </void>
+  <void property="tipoComp">
+   <string>PowerStrip</string>
+  </void>
+ </object>
+</java>
