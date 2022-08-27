@@ -36,6 +36,8 @@ out/
 ### VS Code ###
 .vscode/
 
+### txts###
+*.txt
 
 ### Mercury script###
 *.mry
